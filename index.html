@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang=en> 
+  <head>
+    <meta charset="uft-8" />
+    <meta name="theme-color" content="#536878" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Copwatch</title>
+    <link href="css/copwatch.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <main id="welcome-back" class="isPaused">
+      <h1>Welcome back.</h1>
+    </main>
+  </body>
+  <script src="js/copwatch.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      console.log("Will service worker register?");
+      navigator.serviceWorker.register('service-worker.js').then(function(reg){
+        console.log("Yes it did.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+    }
+  </script>
+</html>

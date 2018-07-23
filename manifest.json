@@ -1,0 +1,15 @@
+{
+  "short_name": "Copwatch",
+  "name": "Copwatch",
+  "icons": [
+    {
+      "src":"images/pillars-icon192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#000",
+  "theme_color": "#0b5491",
+  "display": "standalone"
+}
